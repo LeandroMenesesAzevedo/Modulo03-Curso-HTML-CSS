@@ -16,3 +16,71 @@ Cores que serão ultilizadas no projeto
     padding: 0;
     margin: 0;
 }
+
+html,body{
+    min-height:100vh;
+    background-color:#F2E2CE;
+}
+
+header{
+    background-color:#734136;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.411);
+    box-shadow: 10px 10px 30px black;
+}
+
+header > h1{
+    padding-top: 40px;
+    font-variant: small-caps;/*Além de deixar a frase em caixa alta, a primeira letra fica maior que as demais.*/
+}
+
+header >p{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+/*Estilizando a âncora*/
+header a, footer a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover ,  footer a:hover{
+    padding: 5px;
+    background-color:#b18158;
+    border-radius: 5px;
+}
+
+/*Fazendo a configuração das duas section*/
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+section.normal{
+    background-color: #F2E2CE;
+}
+
+section.imagem{
+        background-color: #b18158;
+        color: #ffff;
+}
+
+section.imagem > p{
+    width: 300px;
+    background-color: #73413636;
+    border-radius: 5px;
+    padding: 10px;
+}
+footer{
+    background-color: #734136;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 4px 10px 25px black;
+}
