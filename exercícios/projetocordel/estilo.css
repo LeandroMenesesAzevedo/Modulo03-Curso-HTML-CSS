@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 /*
 Cores que serão ultilizadas no projeto
     Fundo do topo #734136
@@ -12,6 +14,13 @@ Cores que serão ultilizadas no projeto
     #A65C41
 */
 
+/*Criando variaveis para a fonte*/
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Lemon', serif;
+    --fonte3:'Salsa', cursive;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -20,6 +29,7 @@ Cores que serão ultilizadas no projeto
 html,body{
     min-height:100vh;
     background-color:#F2E2CE;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -34,6 +44,8 @@ header{
 header > h1{
     padding-top: 40px;
     font-variant: small-caps;/*Além de deixar a frase em caixa alta, a primeira letra fica maior que as demais.*/
+    font-family: var(--fonte2);
+    font-size: 7vw; /*Enquanto não ultilizo midia query, fiz essa configuração baseada na larguda da tela*/
 }
 
 header >p{
@@ -60,6 +72,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 20px;
+    font-family: var(--fonte3);
+    font-size: 1.8vw;
 }
 
 section.normal{
@@ -72,7 +86,7 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 300px;
+    display: inline-block;
     background-color: #73413636;
     border-radius: 5px;
     padding: 10px;
