@@ -38,7 +38,7 @@ header{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 2px solid rgba(0, 0, 0, 0.411);
-    box-shadow: 10px 10px 30px black;
+    box-shadow:inset 6px 6px 13px 6px rgba(0, 0, 0, 0.5);
 }
 
 header > h1{
@@ -76,21 +76,43 @@ section{
     font-size: 1.8vw;
 }
 
+section p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: #F2E2CE;
 }
 
 section.imagem{
-        background-color: #b18158;
+        background-color: #97704d;
         color: #ffff;
+        /* colocamos o inset criando um sombra nas bordas na parte de dentro criando deixando mais bonito no efeito parallax*/
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.555);
 }
 
 section.imagem > p{
     display: inline-block;
-    background-color: #73413636;
+    background-color: rgba(0, 0, 0, 0.562);
     border-radius: 5px;
     padding: 10px;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.678);
 }
+
+section#img01{
+    background: url('imagens/rede-social.jpg');
+    background-position: center right;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background: url('imagens/pagina.jpg');
+    background-position: right bottom;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
 footer{
     background-color: #734136;
     color: #ffff;
