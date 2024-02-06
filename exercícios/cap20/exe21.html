@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhando os dados </title>
+    <style>
+
+        table{
+            padding: 10px;
+            width: 600px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+        }
+
+        td.esq{
+            text-align: left;
+        }
+
+        td.cent{
+            text-align: center;
+        }
+
+        td.dir{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
     <h1>Alinhando dados da tabela</h1>
 
     <table>
         <tr>
-            <td>Alinhado a esquerda</td>
+            <td class="esq"> Alinhado a esquerda </td>
+            <td class="esq"> Alinhado a esquerda </td>
+            <td class="esq"> Alinhado a esquerda </td>
+        </tr>
+
+        <tr>
+            <td class="cent"> Alinhado a centro </td>
+            <td class="cent"> Alinhado a centro </td>
+            <td class="cent"> Alinhado a centro </td>
+        </tr>
+
+        <tr>
+            <td class="dir"> Alinhado a direita </td>
+            <td class="dir"> Alinhado a direita </td>
+            <td class="dir"> Alinhado a direita </td>
+
         </tr>
     </table>
 </body>
