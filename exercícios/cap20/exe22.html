@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabelas Grandes </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: rgb(170, 170, 170);
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        Hierarquia da tabela
+        TABLE
+            THEAD
+                tr, td , th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+    -->
+    <h1>Tabela Grande</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th> clubes </th>
+                <th> títulos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Flamengo </td>
+                <td class="num"> 37 </td>
+            </tr>
+
+            <tr>
+                <td> Fluminese </td>
+                <td class="num"> 33 </td>
+            </tr>
+
+            <tr>
+                <td> Vasco </td>
+                <td class="num"> 24 </td>
+            </tr>
+
+            <tr>
+                <td> Botafogo </td>
+                <td class="num"> 21 </td>
+            </tr>
+
+            <tr>
+                <td> America </td>
+                <td class="num"> 7 </td>
+            </tr>
+
+            <tr>
+                <td> Bangu </td>
+                <td class="num"> 2 </td>
+            </tr>
+
+            <tr>
+                <td> São Cristovão </td>
+                <td class="num"> 2 </td>
+            </tr>
+
+            <tr>
+                <td> Paissandu </td>
+                <td class="num"> 1 </td>
+            </tr>
+            
+            <tr>
+                <td> Madureira </td>
+                <td class="num"> 0 </td>
+            </tr>
+
+            <tr>
+                <td> Andarahy </td>
+                <td class="num"> 0 </td>
+            </tr>
+
+            <tr>
+                <td> Americano </td>
+                <td class="num"> 0 </td>
+            </tr>
+
+            <tr>
+                <td> Olaria </td>
+                <td class="num"> 0 </td>
+            </tr>
+
+            <tr> 
+                <td> Bonsucesso </td> 
+                <td class="num"> 0 </td>
+            </tr>
+
+            <tr>
+                <td> Volta Redonda </td>
+                <td class="num"> 0 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th> Resultado </th>
+                <td class="num"> <strong>127</strong> </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
