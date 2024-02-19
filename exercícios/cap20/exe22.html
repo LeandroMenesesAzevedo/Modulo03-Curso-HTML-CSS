@@ -7,17 +7,29 @@
     <style>
         h1{
             text-align: center;
+            padding-top: 20px;
+            color: white;
         }
 
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(148, 148, 182);
         }
 
         table{
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
+            box-shadow: 10px -2px 50px rgba(0, 0, 0, 0.589);
         }
 
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 10px 10px 0px 0px ;
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -25,6 +37,19 @@
 
         td.num{
             text-align: right;
+        }
+
+        /*Efeito zebrinha
+            Colocamento toda a linha dentro do tr um pseudocódigo
+            nth-child (odd) - Quer dizer linhas impares
+            nth-child (even) - Quer dizer linhas pares
+        */
+        tbody >tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
         thead, tfoot{
@@ -37,6 +62,8 @@
     <!--
         Hierarquia da tabela
         TABLE
+            Caption -> É legenda da tabela
+            Scope -> O escopo visualmente não interfere em nada mais semânticamente para o HTML
             THEAD
                 tr, td , th
             TBODY
@@ -47,10 +74,11 @@
     <h1>Tabela Grande</h1>
 
     <table>
+        <caption> Clubes Cariocas </caption>
         <thead>
             <tr>
-                <th> clubes </th>
-                <th> títulos</th>
+                <th scope="col"> clubes </th> <!--Indica que é um titulo da coluna-->
+                <th scope="col" style="width: 8px;"> títulos</th> <!--Indica que o escopo é um titulo da coluna do titulo -->
             </tr>
         </thead>
         <tbody>
@@ -126,7 +154,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th> Resultado </th>
+                <th scope="row"> Resultado </th> <!--Escopo row indica que o escopo está na celula ao lado-->
                 <td class="num"> <strong>127</strong> </td>
             </tr>
         </tfoot>
