@@ -21,6 +21,7 @@
             border-collapse: collapse;
             margin: auto;
             box-shadow: 10px -2px 50px rgba(0, 0, 0, 0.589);
+            position: relative;/*Para colocar o cabeçalho fixo*/
         }
 
         caption{
@@ -37,6 +38,13 @@
 
         td.num{
             text-align: right;
+        }
+
+        /*Colando o cabeçalho fixo no topo*/
+        thead >  tr > th {
+            position: sticky;
+            top: -1;
+            background-color: rgb(170, 170, 170);
         }
 
         /*Efeito zebrinha
