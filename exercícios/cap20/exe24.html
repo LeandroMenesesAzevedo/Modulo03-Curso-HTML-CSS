@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-weight: bold;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 5px;
+        } 
+
+        col.cnome{
+            background-color: #892be2c4;
+        }
+
+        col.cidade{
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <h1> personalizando coluna </h1>
+
+    <table>
+        <!--No HTML5 agora da para personalizar colunas na de uma tabela -->
+        <colgroup> 
+            <col class="cnome"> <!--Referente a coluna nome -->
+            <col class="csexo"> <!--Referente a coluna sexo-->
+            <col class="cidade"><!--Referente a coluna idade-->
+            <col class="cprofissao"><!--Referente a coluna profissão-->
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col"> Nome </th>
+                <th scope="col"> Sexo </th>
+                <th scope="col"> Idade </th>
+                <th scope="col"> Profissião </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> Maria </td>
+                <td> Femenino </td>
+                <td> 20 </td>
+                <td> Profissora</td>
+            </tr>
+
+            <tr>
+                <td> João </td>
+                <td> Masculino </td>
+                <td> 40 </td>
+                <td> Advogado </td>
+            </tr>
+
+            <tr>
+                <td> Ricardo </td>
+                <td> Masculino </td>
+                <td> 35 </td>
+                <td> Médico </td>
+            </tr>
+
+            <tr>
+                <td> Joana </td>
+                <td> Femenino </td>
+                <td> 28 </td>
+                <td> Atendente </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
